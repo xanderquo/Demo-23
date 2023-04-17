@@ -4,11 +4,41 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "682271EA-3BD8-4E2C-803A-7974C3C17F0D"
+      "uuidString" : "2F66EE1A-F279-4304-A82B-AC408D0A71EE"
     }
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/Assets\/AnimePoster.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/AnimePoster.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/Boombox.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Boombox.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/DepressCherry.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/DepressCherry.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/facebook-square-brands.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -29,6 +59,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Hero.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Hero.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/instagram-square-brands.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -44,6 +84,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Assets\/Mobile Phone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/MoviePoster.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/MoviePoster.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -72,6 +122,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/TokyoiterCover.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/TokyoiterCover.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/twitter-square-brands.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -82,11 +142,41 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Vinrian_BlueFeeling.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Vinrian_BlueFeeling.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/Weatherman Magazine.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Weatherman Magazine.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/youtube-square-brands.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Assets\/youtube-square-brands.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/ZekaDesign.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/ZekaDesign.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -309,8 +399,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -318,8 +408,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -482,8 +572,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/deploy\/css\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -496,7 +586,7 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 703028541.200719,
+    "creationDate" : 702560800.42181301,
     "displayValue" : "Demo-23",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_gray",
