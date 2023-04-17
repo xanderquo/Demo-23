@@ -44,11 +44,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/global\/Graphic Icon.svg" : {
+    "\/deploy\/img\/global\/Graphic-Icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/global\/Graphic Icon.svg",
+      "oAP" : "\/deploy\/img\/global\/Graphic-Icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -286,14 +286,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/about.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/about.html",
-      "oF" : 0
-    },
     "\/dev\/content\/hero-2.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -310,20 +302,28 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/partners.kit" : {
+    "\/dev\/content\/LiftingLeft.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/partners.html",
+      "oAP" : "\/dev\/content\/LiftingLeft.html",
       "oF" : 0
     },
-    "\/dev\/content\/request.kit" : {
+    "\/dev\/content\/LiftingRight.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/request.html",
+      "oAP" : "\/dev\/content\/LiftingRight.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/New.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/New.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -354,8 +354,16 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/scripts.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/search.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {
