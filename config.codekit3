@@ -34,6 +34,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/global\/AssistanceEye.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/global\/AssistanceEye.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/global\/facebook-square-brands.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -92,6 +102,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/global\/sort-up-solid.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/global\/SubmitPaint.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/global\/SubmitPaint.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
