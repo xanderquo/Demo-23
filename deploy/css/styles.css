@@ -327,6 +327,10 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -358,7 +362,18 @@ textarea {
     Header
 ============= */
 header {
-  background-color: red;
+  display: grid;
+  grid-template-columns: auto-fill;
+  font-family: Sora;
+  font-size: 18px;
+  color: white;
+  background-color: #30443F;
+}
+header > div {
+  grid-area: "header";
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 /* =============
