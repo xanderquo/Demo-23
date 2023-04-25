@@ -2,5 +2,15 @@
     Footer
 ============= */
 footer{
-    
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". footer .";
+
+    font-family : Epilogue;
+    background-color : #30443F;
+
+    >div{
+        grid-area: footer;
+        margin-top : 16px;
+    }
 }
