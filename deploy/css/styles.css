@@ -357,6 +357,10 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: red;
+}
+
 /* =============
     Footer
 ============= */
