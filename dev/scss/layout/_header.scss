@@ -3,8 +3,8 @@
 ============= */
 header{
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas : "logo header";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". header .";
 
     font-family : Sora;
     font-size : 18px;
@@ -12,10 +12,7 @@ header{
     background-color: #30443F;
 
     >div{
-        grid-area: "header";
-        grid-area: "logo";
-        margin-left : 16px;
-        margin-right : 16px;
+        grid-area: header;
         margin-top : 16px;
     }
 }

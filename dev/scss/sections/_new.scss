@@ -3,7 +3,14 @@
 ============= */
 
 #new{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new .";
 
+    >div{
+        grid-area: new;
+        margin-top : 16px;
+    }
 }
 
 
@@ -14,7 +21,14 @@
 ============= */
 
 #new-1{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new .";
 
+    >div{
+        grid-area: new;
+        margin-top : 16px;
+    }
 }
 
 
@@ -25,7 +39,14 @@
 ============= */
 
 #new-2{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new .";
 
+    >div{
+        grid-area: new;
+        margin-top : 16px;
+    }
 }
 
 
@@ -36,7 +57,14 @@
 ============= */
 
 #new-3{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new .";
 
+    >div{
+        grid-area: new;
+        margin-top : 16px;
+    }
 }
 
 
@@ -47,5 +75,12 @@
 ============= */
 
 #new-4{
+display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new .";
 
+    >div{
+        grid-area: new;
+        margin-top : 16px;
+    }
 }
