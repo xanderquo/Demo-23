@@ -3,7 +3,8 @@
 ============= */
 header{
     display: grid;
-    grid-template-columns: (auto-fill);
+    grid-template-columns: auto 1fr;
+    grid-template-areas : "logo header";
 
     font-family : Sora;
     font-size : 18px;
@@ -12,6 +13,7 @@ header{
 
     >div{
         grid-area: "header";
+        grid-area: "logo";
         margin-left : 16px;
         margin-right : 16px;
         margin-top : 16px;
