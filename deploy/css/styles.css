@@ -327,6 +327,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .large-images {
   width: 100%;
 }
@@ -361,18 +369,22 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+header #HeaderContent {
+  background-color: #30443F;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-  font-family: Sora;
-  font-size: 18px;
-  color: white;
-  background-color: #30443F;
+  grid-template-areas: ". HC .";
 }
-header > div {
-  grid-area: header;
-  margin-top: 16px;
+header #HeaderContent > div {
+  grid-area: "HC";
+}
+header #LogoNav div {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #LogoNav div > div {
+  grid-area: search;
 }
 
 /* =============
@@ -388,24 +400,6 @@ footer {
 footer > div {
   grid-area: footer;
   margin-top: 16px;
-}
-
-/* =============
-    search
-============= */
-#search {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". search .";
-  font-family: Epilogue;
-  font-size: 14px;
-}
-#search > div {
-  grid-area: search;
-  margin-top: 16px;
-}
-#search .image {
-  background-color: #480000;
 }
 
 /* =============

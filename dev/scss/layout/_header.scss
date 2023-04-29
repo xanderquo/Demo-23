@@ -2,17 +2,34 @@
     Header
 ============= */
 header{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas : ". header .";
 
-    font-family : Sora;
-    font-size : 18px;
-    color : white;
-    background-color: #30443F;
+    #HeaderContent{
+        //background of the WHOLE section, not just the grid's area in the div
+        background-color : #30443F;
 
-    >div{
-        grid-area: header;
-        margin-top : 16px;
+        //call forth the grid system
+        display : grid;
+
+        //establish how the grid is laid out- hence its template
+        grid-template-columns: 16px auto 16px;
+
+        //establish the parameters of the area itself
+        grid-template-areas: ". HC .";
+
+        >div{
+            // area in which HC partakes- hence within the 16 pixels
+            grid-area : "HC"
+        }
+    }
+
+    #LogoNav{
+        div{
+            display : grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". search .";
+            >div{
+                grid-area : search;
+            }
+        }
     }
 }
