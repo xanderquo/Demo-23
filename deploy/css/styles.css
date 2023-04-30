@@ -451,64 +451,15 @@ footer > div {
 /* =============
     new
 ============= */
-#new {
+#new section img {
+  width: 100%;
+}
+#new section .card-data {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
+  grid-template-areas: ". card-data .";
+  background-color: #DACDCD;
 }
-#new > div {
-  grid-area: new;
-  margin-top: 16px;
-}
-
-/* =============
-    new-1
-============= */
-#new-1 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
-}
-#new-1 > div {
-  grid-area: new;
-  margin-top: 16px;
-}
-
-/* =============
-    new-2
-============= */
-#new-2 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
-}
-#new-2 > div {
-  grid-area: new;
-  margin-top: 16px;
-}
-
-/* =============
-    new-3
-============= */
-#new-3 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
-}
-#new-3 > div {
-  grid-area: new;
-  margin-top: 16px;
-}
-
-/* =============
-    new-4
-============= */
-#new-4 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
-}
-#new-4 > div {
-  grid-area: new;
-  margin-top: 16px;
+#new section .card-data > div {
+  grid-area: card-data;
 }
