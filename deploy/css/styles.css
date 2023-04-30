@@ -402,7 +402,6 @@ footer {
 }
 footer > div {
   grid-area: footer;
-  margin-top: 16px;
 }
 
 /* =============
