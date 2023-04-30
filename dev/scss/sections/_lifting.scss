@@ -2,31 +2,25 @@
     liftingLeft
 ============= */
 
-#lifting-left{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas : ". liftleft .";
+#sub-hero
+    // both divs are asides, and have no changes but their text and images, so no need to use id or classes
+    aside{
+        background-color : #849795;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas : ". liftleft .";
 
-    >div{
-        grid-area: liftleft;
-        margin-top : 16px;
+        >div{
+            grid-area: liftleft;
+            display : grid;
+            grid-template-columns: 70% auto;
+        }
     }
-}
 
+    //#lifting-left{}
 
+    /* =============
+        liftingRight
+    ============= */
 
-
-/* =============
-    liftingRight
-============= */
-
-#lifting-right{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas : ". liftright .";
-
-    >div{
-        grid-area : liftright;
-        margin-top : 16px;
-    }
-}
+    //#lifting-right{}

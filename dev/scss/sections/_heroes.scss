@@ -2,14 +2,13 @@
     hero
 ============= */
 
-#hero{
-
+#hero-ads{
     display : grid;
-    grid-template-columns : 21px auto 21px;
+    grid-template-columns : 16px auto 16px;
     grid-template-areas : ". area .";
+    background-color : #480000;
 
     .Challenge{
-        background-color: #480000;
         color: white;
         font-style : Epilogue;
     }

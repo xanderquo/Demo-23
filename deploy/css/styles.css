@@ -386,6 +386,9 @@ header #LogoNav div {
 header #LogoNav div > div {
   grid-area: search;
 }
+header #LogoNav button {
+  background-color: #480000;
+}
 
 /* =============
     Footer
@@ -405,22 +408,22 @@ footer > div {
 /* =============
     hero
 ============= */
-#hero {
+#hero-ads {
   display: grid;
-  grid-template-columns: 21px auto 21px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". area .";
-}
-#hero .Challenge {
   background-color: #480000;
+}
+#hero-ads .Challenge {
   color: white;
   font-style: Epilogue;
 }
-#hero .Location {
+#hero-ads .Location {
   background-color: #6D012F;
   color: white;
   font-style: Epilogue;
 }
-#hero > div {
+#hero-ads > div {
   grid-area: area;
 }
 
@@ -430,29 +433,21 @@ footer > div {
 /* =============
     liftingLeft
 ============= */
-#lifting-left {
+#sub-hero aside {
+  background-color: #849795;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". liftleft .";
 }
-#lifting-left > div {
+#sub-hero aside > div {
   grid-area: liftleft;
-  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 70% auto;
 }
 
 /* =============
     liftingRight
 ============= */
-#lifting-right {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". liftright .";
-}
-#lifting-right > div {
-  grid-area: liftright;
-  margin-top: 16px;
-}
-
 /* =============
     new
 ============= */

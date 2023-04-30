@@ -332,20 +332,12 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/LiftingLeft.kit" : {
+    "\/dev\/content\/Lifting.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/LiftingLeft.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/LiftingRight.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/LiftingRight.html",
+      "oAP" : "\/dev\/content\/Lifting.html",
       "oF" : 0
     },
     "\/dev\/content\/New.kit" : {
