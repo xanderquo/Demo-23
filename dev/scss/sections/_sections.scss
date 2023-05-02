@@ -1,0 +1,14 @@
+#sections{
+    display : grid;
+    grid-template-columns : 16px auto 16px;
+    grid-template-areas : ". sections .";
+
+    >div{
+        grid-area : sections;
+
+        @include md{
+            display : grid;
+            grid-template-columns: 70% auto;
+        }
+    }
+}

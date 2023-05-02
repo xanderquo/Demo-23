@@ -407,28 +407,34 @@ footer > div {
 /* =============
     hero
 ============= */
-#hero-ads {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". area .";
-  background-color: #480000;
-}
-#hero-ads .Challenge {
-  color: white;
-  font-style: Epilogue;
-}
-#hero-ads .Location {
-  background-color: #6D012F;
-  color: white;
-  font-style: Epilogue;
-}
-#hero-ads > div {
-  grid-area: area;
-}
-
 /* =============
     hero-2
 ============= */
+#section-1 > div {
+  background-color: #480000;
+  color: white;
+}
+
+#section-2 > div {
+  background-color: #6D012F;
+  color: white;
+}
+
+#sections {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". sections .";
+}
+#sections > div {
+  grid-area: sections;
+}
+@media (min-width: 768px) {
+  #sections > div {
+    display: grid;
+    grid-template-columns: 70% auto;
+  }
+}
+
 /* =============
     liftingLeft
 ============= */

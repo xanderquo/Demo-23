@@ -2,31 +2,6 @@
     hero
 ============= */
 
-#hero-ads{
-    display : grid;
-    grid-template-columns : 16px auto 16px;
-    grid-template-areas : ". area .";
-    background-color : #480000;
-
-    .Challenge{
-        color: white;
-        font-style : Epilogue;
-    }
-
-    .Location{
-        background-color: #6D012F;
-        color: white;
-        font-style : Epilogue;
-    }
-
-    >div{
-        grid-area : area;
-    }
-}
-
-
-
-
 /* =============
     hero-2
 ============= */
