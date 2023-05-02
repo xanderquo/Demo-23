@@ -2,14 +2,18 @@
     Footer
 ============= */
 footer{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas : ". footer .";
-
-    font-family : Epilogue;
-    background-color : #30443F;
+    @include xxl{
+        display : grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". footer . ";
+    }
 
     >div{
-        grid-area: footer;
+        font-family : Epilogue;
+        background-color : #30443F;
+
+        @include xxl{
+            grid-area: footer;
+        }
     }
 }

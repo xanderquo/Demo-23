@@ -3,9 +3,24 @@
 ============= */
 header{
 
-    #HeaderContent{
+    @include xxl {
+        display : grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". header .";
+    }
+
+    >div{
         //background of the WHOLE section, not just the grid's area in the div
         background-color : #30443F;
+        color : white;
+        padding : 50px 0;
+
+        @include xxl {
+            grid-area : header;
+        }
+    }
+
+    /*#HeaderContent{
 
         //call forth the grid system
         display : grid;
@@ -20,7 +35,7 @@ header{
             // area in which HC partakes- hence within the 16 pixels
             grid-area : "HC"
         }
-    }
+    }*/
 
     #LogoNav{
         div{

@@ -369,14 +369,40 @@ textarea {
 /* =============
     Header
 ============= */
-header #HeaderContent {
-  background-color: #30443F;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". HC .";
+header {
+  /*#HeaderContent{
+
+      //call forth the grid system
+      display : grid;
+
+      //establish how the grid is laid out- hence its template
+      grid-template-columns: 16px auto 16px;
+
+      //establish the parameters of the area itself
+      grid-template-areas: ". HC .";
+
+      >div{
+          // area in which HC partakes- hence within the 16 pixels
+          grid-area : "HC"
+      }
+  }*/
 }
-header #HeaderContent > div {
-  grid-area: "HC";
+@media (min-width: 1440px) {
+  header {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". header .";
+  }
+}
+header > div {
+  background-color: #30443F;
+  color: white;
+  padding: 50px 0;
+}
+@media (min-width: 1440px) {
+  header > div {
+    grid-area: header;
+  }
 }
 header #LogoNav div {
   display: grid;
@@ -393,15 +419,21 @@ header #LogoNav button {
 /* =============
     Footer
 ============= */
-footer {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
+@media (min-width: 1440px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". footer . ";
+  }
+}
+footer > div {
   font-family: Epilogue;
   background-color: #30443F;
 }
-footer > div {
-  grid-area: footer;
+@media (min-width: 1440px) {
+  footer > div {
+    grid-area: footer;
+  }
 }
 
 /* =============
@@ -425,6 +457,11 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". sections .";
 }
+@media (min-width: 1440px) {
+  #sections {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 #sections > div {
   grid-area: sections;
 }
@@ -432,6 +469,11 @@ footer > div {
   #sections > div {
     display: grid;
     grid-template-columns: 70% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #sections > div {
+    grid-template-columns: 50% auto;
   }
 }
 
@@ -456,15 +498,76 @@ footer > div {
 /* =============
     new
 ============= */
-#new section img {
-  width: 100%;
-}
-#new section .card-data {
+/*#new{
+    section{
+        img{
+            width : 100%;
+        }
+        .card-data{
+            display : grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". card-data .";
+            background-color : #DACDCD;
+            >div{
+                grid-area : card-data;
+            }
+        }
+    }
+
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas : ". new . "; */
+#new {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". card-data .";
+  grid-template-areas: ". new . ";
+}
+@media (min-width: 1440px) {
+  #new {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#new > div {
+  grid-area: new;
+}
+#new > div ul {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #new > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
+  }
+}
+@media (min-width: 1024px) {
+  #new > div ul {
+    grid-template-columns: repeat 6, 1fr;
+    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
+  }
+}
+#new > div ul li {
+  list-style: none;
+  background-color: var(--lightGray);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
   background-color: #DACDCD;
 }
-#new section .card-data > div {
-  grid-area: card-data;
+#new > div ul #n1 {
+  grid-area: n1;
+}
+#new > div ul #n2 {
+  grid-area: n2;
+}
+#new > div ul #n3 {
+  grid-area: n3;
+}
+#new > div ul #n4 {
+  grid-area: n4;
+}
+#new > div ul #n5 {
+  grid-area: n5;
 }

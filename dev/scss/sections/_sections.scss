@@ -3,12 +3,20 @@
     grid-template-columns : 16px auto 16px;
     grid-template-areas : ". sections .";
 
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+
     >div{
         grid-area : sections;
 
         @include md{
             display : grid;
             grid-template-columns: 70% auto;
+        }
+
+        @include lg{
+            grid-template-columns: 50% auto;
         }
     }
 }
