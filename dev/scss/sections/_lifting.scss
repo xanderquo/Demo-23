@@ -2,20 +2,37 @@
     liftingLeft
 ============= */
 
-#sub-hero
-    // both divs are asides, and have no changes but their text and images, so no need to use id or classes
+#sub-hero{
     aside{
         background-color : #849795;
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas : ". liftleft .";
 
+        @include md{
+            grid-template-columns: 12% auto 12%;
+        }
+
         >div{
             grid-area: liftleft;
             display : grid;
             grid-template-columns: 70% auto;
+
+        
+            @include md{
+                display : grid;
+                grid-template-columns: 50% auto;
+                gap : 16px;
+            }
+
+            @include xl{
+                display : grid;
+                grid-template-columns: 50% auto;
+            }
         }
     }
+}
+    // both divs are asides, and have no changes but their text and images, so no need to use id or classes
 
     //#lifting-left{}
 

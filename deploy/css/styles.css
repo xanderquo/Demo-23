@@ -419,6 +419,13 @@ header #LogoNav button {
 /* =============
     Footer
 ============= */
+footer {
+  /*.Follow-Us{
+      button{
+          //background-color : transparent;
+      }
+  }*/
+}
 @media (min-width: 1440px) {
   footer {
     display: grid;
@@ -468,11 +475,12 @@ footer > div {
 @media (min-width: 768px) {
   #sections > div {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
   #sections > div {
+    display: grid;
     grid-template-columns: 50% auto;
   }
 }
@@ -486,10 +494,28 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". liftleft .";
 }
+@media (min-width: 768px) {
+  #sub-hero aside {
+    grid-template-columns: 12% auto 12%;
+  }
+}
 #sub-hero aside > div {
   grid-area: liftleft;
   display: grid;
   grid-template-columns: 70% auto;
+}
+@media (min-width: 768px) {
+  #sub-hero aside > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #sub-hero aside > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
 
 /* =============
@@ -544,7 +570,7 @@ footer > div {
 }
 @media (min-width: 1024px) {
   #new > div ul {
-    grid-template-columns: repeat 6, 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
   }
 }

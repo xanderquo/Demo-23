@@ -2,6 +2,13 @@
     Footer
 ============= */
 footer{
+
+    /*.Follow-Us{
+        button{
+            //background-color : transparent;
+        }
+    }*/
+    
     @include xxl{
         display : grid;
         grid-template-columns: auto 1440px auto;

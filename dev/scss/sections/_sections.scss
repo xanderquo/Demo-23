@@ -12,10 +12,11 @@
 
         @include md{
             display : grid;
-            grid-template-columns: 70% auto;
+            grid-template-columns: 40% auto;
         }
 
         @include lg{
+            display : grid;
             grid-template-columns: 50% auto;
         }
     }
