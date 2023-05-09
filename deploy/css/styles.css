@@ -335,6 +335,15 @@ ul li {
   list-style: none;
 }
 
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
 .large-images {
   width: 100%;
 }
@@ -446,45 +455,46 @@ footer > div {
 /* =============
     hero
 ============= */
-/* =============
-    hero-2
-============= */
-#section-1 > div {
-  background-color: #480000;
-  color: white;
-}
-
-#section-2 > div {
-  background-color: #6D012F;
-  color: white;
-}
-
-#sections {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". sections .";
-}
-@media (min-width: 1440px) {
-  #sections {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-#sections > div {
-  grid-area: sections;
-}
 @media (min-width: 768px) {
-  #sections > div {
+  #hero #hero-bottom {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
-  #sections > div {
-    display: grid;
+  #hero #hero-bottom {
     grid-template-columns: 50% auto;
   }
 }
+#hero #hero-bottom section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-sub .";
+  background-color: peachpuff;
+}
+#hero #hero-bottom section > div {
+  grid-area: hero-sub;
+}
+#hero #hero-bottom #section-1 {
+  background-color: peachpuff;
+}
+@media (min-width: 1440px) {
+  #hero #hero-bottom #section-1 {
+    grid-template-columns: 20% auto 16px;
+  }
+}
+#hero #hero-bottom #section-2 {
+  background-color: purple;
+}
+@media (min-width: 1440px) {
+  #hero #hero-bottom #section-2 {
+    grid-template-columns: 16px auto 20%;
+  }
+}
 
+/* =============
+    hero-2
+============= */
 /* =============
     liftingLeft
 ============= */

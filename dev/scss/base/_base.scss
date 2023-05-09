@@ -10,6 +10,13 @@ ul{
     }
 }
 
+.show-large{
+    display : none;
+    @include lg{
+        display : block;
+    }
+}
+
 .large-images{
     width : 100%;
 }
