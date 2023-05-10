@@ -43,8 +43,9 @@
                 display : grid;
                 //grid-template-columns: 50% auto;
                 grid-template-columns: repeat(4, 1fr);
-                gap : 10px;
+                gap : 16px;
                 grid-template-areas: 
+                "nt nt nt nt"
                 "n1 n1 n2 n2"
                 "n3 n3 n4 n4"
                 ". n5 n5 .";
@@ -52,8 +53,16 @@
 
             @include lg{
                 grid-template-columns: repeat(6, 1fr);
-                grid-template-areas: "n1 n1 n2 n2 n3 n3"
+                grid-template-areas: 
+                "nt nt nt nt nt nt"
+                "n1 n1 n2 n2 n3 n3"
                 ". n4 n4 n5 n5 .";
+            }
+
+            h1{
+                @include md{
+                    grid-area : nt;
+                }
             }
 
             li{

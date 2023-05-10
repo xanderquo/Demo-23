@@ -347,7 +347,7 @@ ul li {
 .show-extra-large {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .show-extra-large {
     display: block;
   }
@@ -504,6 +504,52 @@ footer > div {
 /* =============
     hero-2
 ============= */
+@media (min-width: 1024px) {
+  #hero-2 {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery . ";
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero-2 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 ul {
+    grid-area: gallery;
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 ul #g1 {
+    grid-area: g1;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 ul #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 ul #g3 {
+    grid-area: g3;
+  }
+}
+
 /* =============
     liftingLeft
 ============= */
@@ -587,14 +633,19 @@ footer > div {
   #new > div ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
+    gap: 16px;
+    grid-template-areas: "nt nt nt nt" "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
   }
 }
 @media (min-width: 1024px) {
   #new > div ul {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
+    grid-template-areas: "nt nt nt nt nt nt" "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul h1 {
+    grid-area: nt;
   }
 }
 #new > div ul li {
