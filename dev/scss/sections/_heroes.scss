@@ -3,9 +3,9 @@
 ============= */
 
 #hero{
+    background-color : peachpuff;
 
     #hero-bottom{
-
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
@@ -19,7 +19,6 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-sub .";
-            background-color : peachpuff;
 
             >div{
                 grid-area: hero-sub;

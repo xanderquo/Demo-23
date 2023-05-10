@@ -2,25 +2,49 @@
     Footer
 ============= */
 footer{
-
-    /*.Follow-Us{
-        button{
-            //background-color : transparent;
-        }
-    }*/
+    display : grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer . ";
+    background: #30443F;
+    color: white;
     
     @include xxl{
-        display : grid;
-        grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". footer . ";
+        grid-template-columns: auto 1200px auto;
     }
 
     >div{
-        font-family : Epilogue;
-        background-color : #30443F;
+        grid-area: footer;
+        @include md{
+            display : grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas : 
+            "f1 f2"
+            "f1 f3";
+        }
 
-        @include xxl{
-            grid-area: footer;
+        @include lg{
+            display : grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas : 
+            "f1 f2 f3";
+        }
+
+        #f1{
+            @include md{
+                grid-area: f1;
+            }
+        }
+
+        #f2{
+            @include md{
+                grid-area: f2;
+            }
+        }
+
+        #f3{
+            @include md{
+                grid-area: f3;
+            }
         }
     }
 }

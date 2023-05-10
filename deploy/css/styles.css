@@ -388,6 +388,7 @@ textarea {
     Header
 ============= */
 header {
+  background-color: #30443F;
   /*#HeaderContent{
 
       //call forth the grid system
@@ -413,7 +414,6 @@ header {
   }
 }
 header > div {
-  background-color: #30443F;
   color: white;
   padding: 50px 0;
 }
@@ -438,32 +438,56 @@ header #LogoNav button {
     Footer
 ============= */
 footer {
-  /*.Follow-Us{
-      button{
-          //background-color : transparent;
-      }
-  }*/
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer . ";
+  background: #30443F;
+  color: white;
 }
 @media (min-width: 1440px) {
   footer {
-    display: grid;
-    grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". footer . ";
+    grid-template-columns: auto 1200px auto;
   }
 }
 footer > div {
-  font-family: Epilogue;
-  background-color: #30443F;
+  grid-area: footer;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   footer > div {
-    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f3 {
+    grid-area: f3;
   }
 }
 
 /* =============
     hero
 ============= */
+#hero {
+  background-color: peachpuff;
+}
 @media (min-width: 768px) {
   #hero #hero-bottom {
     display: grid;
@@ -479,7 +503,6 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
-  background-color: peachpuff;
 }
 #hero #hero-bottom section > div {
   grid-area: hero-sub;
