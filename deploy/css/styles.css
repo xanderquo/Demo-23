@@ -516,17 +516,22 @@ footer > div {
     grid-template-columns: 50% auto;
   }
 }
-#hero #hero-bottom section {
+#hero #hero-bottom .hero-bottom-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
-  background-color: peachpuff;
+  color: white;
 }
-#hero #hero-bottom section > div {
+#hero #hero-bottom .hero-bottom-content > div {
   grid-area: hero-sub;
+  display: flex;
+  align-items: center;
+}
+#hero #hero-bottom .hero-bottom-content > div aside {
+  margin-left: auto;
 }
 #hero #hero-bottom #section-1 {
-  background-color: peachpuff;
+  background-color: var(--redDark);
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #section-1 {
@@ -534,7 +539,7 @@ footer > div {
   }
 }
 #hero #hero-bottom #section-2 {
-  background-color: purple;
+  background-color: var(--redDarkViolet);
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #section-2 {
