@@ -485,9 +485,6 @@ footer > div {
 /* =============
     hero
 ============= */
-#hero {
-  background-color: peachpuff;
-}
 @media (min-width: 768px) {
   #hero #hero-bottom {
     display: grid;
@@ -503,6 +500,7 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
+  background-color: peachpuff;
 }
 #hero #hero-bottom section > div {
   grid-area: hero-sub;
