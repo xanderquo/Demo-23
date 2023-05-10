@@ -2,26 +2,12 @@
     Header
 ============= */
 header{
-    //background of the WHOLE section, not just the grid's area in the div
-    background-color : #30443F;
 
-    @include xxl {
-        display : grid;
-        grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". header .";
-    }
-
-    >div{
-        color : white;
-        padding : 50px 0;
-
-        @include xxl {
-            grid-area : header;
-        }
-    }
-
-    /*#HeaderContent{
-
+    #HeaderContent{
+        background-color: var(--greenDark);
+        color: white;
+        padding: 16px 16px 24px;
+        
         //call forth the grid system
         display : grid;
 
@@ -31,23 +17,54 @@ header{
         //establish the parameters of the area itself
         grid-template-areas: ". HC .";
 
+        @include md{
+            padding: 16px 32px 24px;
+        }
+
+        @include xxl{
+            grid-template-columns: auto 1200px auto;
+        }
+
         >div{
             // area in which HC partakes- hence within the 16 pixels
-            grid-area : "HC"
+            grid-area : "HC";
         }
-    }*/
+    }
 
     #LogoNav{
-        div{
-            display : grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". search .";
-            >div{
-                grid-area : search;
-            }
+        display : grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". search .";
+        padding: 16px 0;
+
+        @include md{
+            padding: 24px 0;
         }
-        button{
-            background-color : #480000;
+
+        @include xxl{
+            grid-template-columns: auto 1200px auto;
+        }
+
+        >div{
+            grid-area : search;
+
+            form{
+                display : flex;
+                gap : 16px;
+
+                input{
+                    border : none;
+                    border-bottom: 1px solid var(--mint);
+                    width: 100%;
+                }
+    
+                button{
+                    border: none;
+                    border-radius: 5px;
+                    padding: 8px 16px;
+                    background-color : #480000;
+                }
+            }
         }
     }
 }

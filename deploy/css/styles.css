@@ -15,7 +15,7 @@ html {
   --white: #ffffff;
   --greenDark: #30443F;
   --greenLight: #849795;
-  --greenMint: #A8DADC;
+  --mint: #A8DADC;
   --redDark: #480000;
   --redDarkViolet: #6D012F;
   --redLight: #DACDCD;
@@ -366,6 +366,11 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -393,50 +398,59 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  background-color: #30443F;
-  /*#HeaderContent{
-
-      //call forth the grid system
-      display : grid;
-
-      //establish how the grid is laid out- hence its template
-      grid-template-columns: 16px auto 16px;
-
-      //establish the parameters of the area itself
-      grid-template-areas: ". HC .";
-
-      >div{
-          // area in which HC partakes- hence within the 16 pixels
-          grid-area : "HC"
-      }
-  }*/
-}
-@media (min-width: 1440px) {
-  header {
-    display: grid;
-    grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". header .";
-  }
-}
-header > div {
+header #HeaderContent {
+  background-color: var(--greenDark);
   color: white;
-  padding: 50px 0;
+  padding: 16px 16px 24px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". HC .";
 }
-@media (min-width: 1440px) {
-  header > div {
-    grid-area: header;
+@media (min-width: 768px) {
+  header #HeaderContent {
+    padding: 16px 32px 24px;
   }
 }
-header #LogoNav div {
+@media (min-width: 1440px) {
+  header #HeaderContent {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+header #HeaderContent > div {
+  grid-area: "HC";
+}
+header #LogoNav {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0;
 }
-header #LogoNav div > div {
+@media (min-width: 768px) {
+  header #LogoNav {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  header #LogoNav {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+header #LogoNav > div {
   grid-area: search;
 }
-header #LogoNav button {
+header #LogoNav > div form {
+  display: flex;
+  gap: 16px;
+}
+header #LogoNav > div form input {
+  border: none;
+  border-bottom: 1px solid var(--mint);
+  width: 100%;
+}
+header #LogoNav > div form button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
   background-color: #480000;
 }
 
