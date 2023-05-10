@@ -3,31 +3,35 @@
 ============= */
 
 #sub-hero{
-    aside{
-        background-color : #849795;
+    @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas : ". liftleft .";
 
+        @include xxl{
+            grid-template-columns: auto 1200px auto;
+        }
+    }
+
+    >div{
+        display : grid;
+        gap : 16px;
+
         @include md{
-            grid-template-columns: 12% auto 12%;
+            grid-area: liftleft;
+            grid-template-columns: 50% auto;
         }
 
-        >div{
-            grid-area: liftleft;
+        aside{
             display : grid;
-            grid-template-columns: 70% auto;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas : ". sub-hero .";
+            background-color: olive;
 
-        
-            @include md{
-                display : grid;
-                grid-template-columns: 50% auto;
-                gap : 16px;
-            }
-
-            @include xl{
-                display : grid;
-                grid-template-columns: 50% auto;
+            >div{
+                grid-area : sub-hero;
+                display: grid;
+                grid-template-columns: 70% auto;
             }
         }
     }

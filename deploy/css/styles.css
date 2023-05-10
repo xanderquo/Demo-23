@@ -344,6 +344,15 @@ ul li {
   }
 }
 
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
 .large-images {
   width: 100%;
 }
@@ -498,34 +507,38 @@ footer > div {
 /* =============
     liftingLeft
 ============= */
-#sub-hero aside {
-  background-color: #849795;
+@media (min-width: 768px) {
+  #sub-hero {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". liftleft .";
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  #sub-hero {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#sub-hero > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #sub-hero > div {
+    grid-area: liftleft;
+    grid-template-columns: 50% auto;
+  }
+}
+#sub-hero > div aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". liftleft .";
+  grid-template-areas: ". sub-hero .";
+  background-color: olive;
 }
-@media (min-width: 768px) {
-  #sub-hero aside {
-    grid-template-columns: 12% auto 12%;
-  }
-}
-#sub-hero aside > div {
-  grid-area: liftleft;
+#sub-hero > div aside > div {
+  grid-area: sub-hero;
   display: grid;
   grid-template-columns: 70% auto;
-}
-@media (min-width: 768px) {
-  #sub-hero aside > div {
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 16px;
-  }
-}
-@media (min-width: 1200px) {
-  #sub-hero aside > div {
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
 }
 
 /* =============
