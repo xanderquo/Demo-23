@@ -7,6 +7,7 @@ footer{
     grid-template-areas: ". footer . ";
     background: #30443F;
     color: white;
+    padding: 24px 0;
     
     @include xxl{
         grid-template-columns: auto 1200px auto;
@@ -20,6 +21,7 @@ footer{
             grid-template-areas : 
             "f1 f2"
             "f1 f3";
+            gap: 16px;
         }
 
         @include lg{
@@ -30,20 +32,68 @@ footer{
         }
 
         #f1{
+            color: var(--mint);
             @include md{
                 grid-area: f1;
             }
+
+            h1{
+                color: white;
+            }
+            section{
+                display: flex;
+                img{
+                    color: var(mint);
+                    font-size: rem-calc(20);
+                    margin-right: 16px;
+                }
+            }
+
         }
 
         #f2{
             @include md{
                 grid-area: f2;
             }
+
+            form{
+                input{
+                    background-color: var(--mint);
+                    color: var(--greenDark);
+                    width: 100%;
+                    border-radius: 0;
+                    border: none;
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                }
+
+                div{
+                    text-align : right;
+                    button{
+                        margin-top : 16px;
+                        border: none;
+                    }
+                }
+            }
         }
 
         #f3{
             @include md{
                 grid-area: f3;
+            }
+
+            ul{
+                display: flex;
+                @include lg{
+                    justify-content: flex-end;
+                }
+                li{
+                    margin-right: 16px;
+                    a{
+                        color: white;
+                        font-size: rem-calc(30);
+                    }
+                }
             }
         }
     }
