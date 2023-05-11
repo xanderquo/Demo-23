@@ -505,6 +505,10 @@ footer > div {
 /* =============
     hero
 ============= */
+#hero img {
+  font-size: 0;
+  display: block;
+}
 @media (min-width: 768px) {
   #hero #hero-bottom {
     display: grid;
@@ -521,6 +525,7 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
   color: white;
+  padding: 16px;
 }
 #hero #hero-bottom .hero-bottom-content > div {
   grid-area: hero-sub;
@@ -529,6 +534,10 @@ footer > div {
 }
 #hero #hero-bottom .hero-bottom-content > div aside {
   margin-left: auto;
+}
+#hero #hero-bottom .hero-bottom-content > div aside a {
+  display: flex;
+  gap: 8px;
 }
 #hero #hero-bottom #section-1 {
   background-color: var(--redDark);

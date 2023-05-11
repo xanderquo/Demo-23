@@ -4,6 +4,11 @@
 
 #hero{
 
+    img{
+        font-size : 0;
+        display : block;
+    }
+
     #hero-bottom{
 
         @include md{
@@ -20,14 +25,20 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-sub .";
             color : white;
+            padding : 16px;
 
             >div{
                 grid-area: hero-sub;
-                display: flex;
+                display : flex;
                 align-items : center;
 
                 aside{
                     margin-left : auto;
+
+                    a{
+                        display : flex;
+                        gap : 8px;
+                    }
                 }
             }
         }
