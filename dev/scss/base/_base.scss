@@ -10,6 +10,18 @@ ul{
     }
 }
 
+.content-space-top{
+    margin-top : 16px;
+
+    @include md{
+        margin-top: 24px;
+    }
+
+    @include lg{
+        margin-top: 30px;
+    }
+}
+
 .show-large{
     display : none;
     @include lg{

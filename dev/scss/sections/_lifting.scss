@@ -22,17 +22,30 @@
             grid-template-columns: 50% auto;
         }
 
-        aside{
-            display : grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas : ". sub-hero .";
-            background-color: olive;
+        #sub-hero-card{
+            background-color: var(--greenDark);
+            padding: 16px;
+            color : white;
+            display : flex;
+            align-items : center;
 
-            >div{
-                grid-area : sub-hero;
-                display: grid;
-                grid-template-columns: 70% auto;
+            a{
+                margin-top : 8px;
             }
+
+            aside{
+                margin-left: auto;
+            }
+            // display : grid;
+            // grid-template-columns: 16px auto 16px;
+            // grid-template-areas : ". sub-hero .";
+            // background-color: olive;
+
+            // >div{
+            //     grid-area : sub-hero;
+            //     display: grid;
+            //     grid-template-columns: 70% auto;
+            // }
         }
     }
 }
