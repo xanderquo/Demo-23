@@ -23,17 +23,23 @@
         }
 
         #sub-hero-card{
-            background-color: var(--greenDark);
+            background-color: var(--greenLight);
             padding: 16px;
             color : white;
             display : flex;
             align-items : center;
             box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 
-            a{
-                margin-top : 8px;
-            }
+            section{
+                a{
+                    margin-top : 8px;
+                }
 
+                .liftingText{
+                    padding : 0 15% 0 0;
+                }
+            }
+            
             aside{
                 margin-left: auto;
 

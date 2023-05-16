@@ -19,7 +19,7 @@ html {
   --redDark: #480000;
   --redDarkViolet: #6D012F;
   --redLight: #DACDCD;
-  --grey: ##E0FBFC;
+  --grey: #E0FBFC;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -346,6 +346,56 @@ a {
   text-decoration: none;
 }
 
+.heroBigText {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .heroBigText {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heroBigText {
+    font-size: 1.9375rem;
+  }
+}
+
+.liftingText {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .liftingText {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .liftingText {
+    font-size: 1.9375rem;
+  }
+}
+
+.headerText {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .headerText {
+    font-size: 2.125rem;
+  }
+}
+
+.basicText {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .basicText {
+    font-size: 1rem;
+  }
+}
+
 .content-space-top {
   margin-top: 16px;
 }
@@ -398,7 +448,6 @@ h1, h2, h3, h4, h5, h6, p {
     Buttons
 ============= */
 .butt-button {
-  background-color: var(--redDark);
   color: white;
   padding: 8px 16px;
   display: inline-block;
@@ -518,6 +567,31 @@ footer > div {
     grid-template-areas: "f1 f2 f3";
   }
 }
+footer > div h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 42px;
+  margin-bottom: 24px;
+}
+footer > div h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 16px;
+}
+footer > div address {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 24px;
+}
+footer > div p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 24px;
+}
 footer > div #f1 {
   color: var(--mint);
 }
@@ -543,7 +617,7 @@ footer > div #f1 section img {
   }
 }
 footer > div #f2 form input {
-  background-color: var(--mint);
+  background-color: var(--grey);
   color: var(--greenDark);
   width: 100%;
   border-radius: 0;
@@ -555,6 +629,7 @@ footer > div #f2 form div {
   text-align: right;
 }
 footer > div #f2 form div button {
+  background-color: var(--redDark);
   margin-top: 16px;
   border: none;
 }
@@ -575,11 +650,11 @@ footer > div #f3 ul li {
   margin-right: 16px;
 }
 footer > div #f3 ul li a {
-  background-color: none;
   font-size: 1.875rem;
 }
-footer > div .Follow-Us button img {
-  background-color: none;
+footer > div #f3 .Follow-Us button {
+  background-color: transparent;
+  margin: 8px;
 }
 
 /* =============
@@ -588,6 +663,19 @@ footer > div .Follow-Us button img {
 #hero img {
   font-size: 0;
   display: block;
+}
+#hero #hero-bottom a:link, #hero #hero-bottom a:visited {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+#hero #hero-bottom a:hover, #hero #hero-bottom a:active {
+  text-decoration-line: underline;
+  color: var(--grey);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   #hero #hero-bottom {
@@ -611,6 +699,14 @@ footer > div .Follow-Us button img {
   grid-area: hero-sub;
   display: flex;
   align-items: center;
+}
+#hero #hero-bottom .hero-bottom-content > div p {
+  padding: 0 12% 0 0;
+}
+@media (min-width: 768px) {
+  #hero #hero-bottom .hero-bottom-content > div p {
+    padding: 0 0 0 0;
+  }
 }
 #hero #hero-bottom .hero-bottom-content > div aside {
   margin-left: auto;
@@ -721,15 +817,18 @@ footer > div .Follow-Us button img {
   }
 }
 #sub-hero > div #sub-hero-card {
-  background-color: var(--greenDark);
+  background-color: var(--greenLight);
   padding: 16px;
   color: white;
   display: flex;
   align-items: center;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
-#sub-hero > div #sub-hero-card a {
+#sub-hero > div #sub-hero-card section a {
   margin-top: 8px;
+}
+#sub-hero > div #sub-hero-card section .liftingText {
+  padding: 0 15% 0 0;
 }
 #sub-hero > div #sub-hero-card aside {
   margin-left: auto;
@@ -835,6 +934,32 @@ footer > div .Follow-Us button img {
   width: 100%;
   background-color: #DACDCD;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+}
+#new > div ul h2 {
+  font-size: 1.6875rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+#new > div ul p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-left: 16px;
+}
+#new > div ul a {
+  margin: 8px 16px 0px;
+}
+#new > div ul a:link, #new > div ul a:visited {
+  background-color: var(--redDark);
+}
+#new > div ul a:hover, #new > div ul a:active {
+  background-color: var(--grey);
+  color: var(--redDark);
+  padding: 8px 24px;
+  transition: 0.25s;
 }
 #new > div ul #n1 {
   grid-area: n1;

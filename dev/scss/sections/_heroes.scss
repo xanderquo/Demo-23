@@ -11,6 +11,21 @@
 
     #hero-bottom{
 
+        a:link, a:visited{
+            color: white;
+            font-size: rem-calc(18);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a:hover, a:active{
+            text-decoration-line:underline;
+            color: var(--grey);
+            font-size: rem-calc(24);
+            font-weight: 700;
+            transition: 0.25s;
+        }
+
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
@@ -31,6 +46,14 @@
                 grid-area: hero-sub;
                 display : flex;
                 align-items : center;
+
+                p{
+                    padding : 0 12% 0 0;
+
+                    @include md{
+                        padding : 0 0 0 0;
+                    }
+                }
 
                 aside{
                     margin-left : auto;
