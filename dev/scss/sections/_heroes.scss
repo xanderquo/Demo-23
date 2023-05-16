@@ -65,6 +65,21 @@
 ============= */
 
 #hero-2{
+
+    background-image: url("../img/heroes/Weatherman_Magazine.svg");
+    background-size: cover;
+    height: 361px;
+
+    @include md{
+        height : 609px;
+        //scale from left side at the bottom
+        background-position: left bottom;
+    }
+    @include xl{
+        height : 625px;
+    }
+
+
     @include lg{
         display : grid;
         grid-template-columns : 16px auto 16px;

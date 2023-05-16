@@ -342,6 +342,10 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content-space-top {
   margin-top: 16px;
 }
@@ -628,6 +632,22 @@ footer > div #f3 ul li a {
 /* =============
     hero-2
 ============= */
+#hero-2 {
+  background-image: url("../img/heroes/Weatherman_Magazine.svg");
+  background-size: cover;
+  height: 361px;
+}
+@media (min-width: 768px) {
+  #hero-2 {
+    height: 609px;
+    background-position: left bottom;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    height: 625px;
+  }
+}
 @media (min-width: 1024px) {
   #hero-2 {
     display: grid;
