@@ -66,18 +66,19 @@
 
 #hero-2{
 
-    background-image: url("../img/heroes/Weatherman_Magazine.svg");
-    background-size: cover;
-    height: 361px;
+    //background image which didn't appear in figma? it's here
+    //background-image: url("../img/heroes/Weatherman_Magazine.svg");
+    //background-size: cover;
+    //height: 361px;
 
-    @include md{
+    /*@include md{
         height : 609px;
         //scale from left side at the bottom
         background-position: left bottom;
     }
     @include xl{
         height : 625px;
-    }
+    } */
 
 
     @include lg{
