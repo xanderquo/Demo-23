@@ -733,6 +733,32 @@ footer > div #f3 ul li a {
 #sub-hero > div #sub-hero-card aside {
   margin-left: auto;
 }
+#sub-hero > div #sub-hero-card aside #about-img-container {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 4px solid white;
+}
+#sub-hero > div #sub-hero-card aside #about-img-container #about-img {
+  background-image: url(../img/global/SubmitPaint.svg);
+  background-position: center;
+  background-size: cover;
+  width: 85px;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
+#sub-hero > div #sub-hero-card aside #about-img-container02 {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 4px solid white;
+}
+#sub-hero > div #sub-hero-card aside #about-img-container02 #about-img02 {
+  background-image: url(../img/global/AssistanceEye.svg);
+  background-position: center;
+  background-size: cover;
+  width: 85px;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
 
 /* =============
     liftingRight

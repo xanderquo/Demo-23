@@ -36,6 +36,38 @@
 
             aside{
                 margin-left: auto;
+
+                #about-img-container{
+                    border-radius : 100%;
+                    //crop out image with radius
+                    overflow: hidden;
+                    border : 4px solid white;
+                    #about-img{
+                        background-image: url(../img/global/SubmitPaint.svg);
+                        background-position : center;
+                        background-size: cover;
+                        //size of containter
+                        width : 85px;
+                        padding-bottom: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                #about-img-container02{
+                    border-radius : 100%;
+                    //crop out image with radius
+                    overflow: hidden;
+                    border : 4px solid white;
+                    #about-img02{
+                        background-image: url(../img/global/AssistanceEye.svg);
+                        background-position : center;
+                        background-size: cover;
+                        //size of containter
+                        width : 85px;
+                        padding-bottom: 100%;
+                        border-radius: 50%;
+                    }
+                }
             }
             // display : grid;
             // grid-template-columns: 16px auto 16px;
